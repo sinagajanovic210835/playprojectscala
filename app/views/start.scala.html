@@ -1,0 +1,20 @@
+@()
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" media="screen"
+          href='@routes.Assets.versioned("stylesheets/main.css")'>
+</head>
+<br>
+<div class="container">
+<b>
+
+<a href='@routes.Products.listProds("All products", "")'>STORE</a>
+<hr>
+<a href="@routes.Products.updateProducts()">Products update / insert page</a>
+</b>
+
+</div>

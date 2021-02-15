@@ -1,0 +1,27 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/sina/scalaworkspace/Webstore/webstore/target/scala-2.13/wstore_2.13-1.0-SNAPSHOT-sources.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/conf/application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/conf/logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	routes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/conf/routes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	messages[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/conf/messages[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/Products.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/app/controllers/Products.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/Users.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/app/controllers/Users.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/Barcodes.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/app/controllers/Barcodes.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers/HomeController.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/app/controllers/HomeController.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service/ProductDB.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/app/service/ProductDB.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service/DataBaseExecutionContext.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/app/service/DataBaseExecutionContext.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/Product.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/app/models/Product.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models/User.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/app/models/User.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

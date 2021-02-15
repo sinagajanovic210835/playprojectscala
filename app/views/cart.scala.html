@@ -1,0 +1,35 @@
+@(prodList:List[Product], cart:String, categories:Set[String])(implicit messages:Messages)
+
+@main("Cart", cart, categories){
+
+<div class="col" style="background-color:#4d4d4d;">
+
+    <table class="table table-bordered table-striped table-dark table-sm table-hover" style="margin-top:10px;">
+        <thead>
+        <tr><td><h1  style="text-align:center"></h1></td></tr>
+        <tr><td style="text-align:center;"><h4>Product name</h4></td>
+            <td style="text-align:center;"><h4>Picture</h4></td>
+            <td style="text-align:center;"><h4>BAR code</h4></td>
+            <td style="text-align:center;"><h4>Price</h4></td>
+            <td style="text-align:center;"><h4>Category</h4></td>
+            <td style="text-align:center;color:#00cc66"><h3><i class="fa fa-cash-register fa-lg" style="color:#00cc66"></i> @(prodList.map(_.price).sum)</h3></td></tr></thead>
+        <tbody>
+        @for(p <- prodList){
+        <tr>
+            <td>@p.name</td>
+            <td><a href="@routes.Products.details(cart, p.id)"><img src ="@p.pictureURL" style="width:3vw"></a></td>
+            <td><img src = "@routes.Barcodes.barcode(p.ean, 80)"></td>
+            <td>@p.price</td>
+            <td>@p.category</td>
+            <td style="text-align:center">
+                <a href='@routes.Products.removeCart(p.id, prodList.map(_.id).mkString("",",",","))'
+                   class="btn btn-outline-danger" onclick="if (!(confirm('Remove @p.name from cart?'))) return false;">
+                    <i class="fa fa-trash-alt"></i> Remove from cart</a></td>
+        </tr>
+        }
+        </tbody>
+    </table>
+    <h1 style="text-align:center;"><a href = '' style="font-size:1vw" class="btn btn-link"><i class="fa fa-handshake fa-4x" style="color:yellow;"></i></a></h1>
+    </div>
+
+    }

@@ -1,0 +1,18 @@
+@(cart:String, categ:Set[String])(implicit messages:Messages)
+
+<div class="row" style="border-bottom:1px solid black; background-color:#e6e6e6">
+    <div class="col">
+        &emsp;   <a href='@routes.Products.listProds("All products", cart)'><b><i class="fa fa-home fa-lg"></i></b></a>
+
+       @for(c <- categ){
+
+           <a href = "@routes.Products.listProds(c, cart)" class="btn btn-link"><b>@c.capitalize</b></a>
+
+       }
+    </div>
+    <div class="col"  style="text-align:right; " >
+           <a href = '@(if(cart.isEmpty) "" else routes.Products.showCart(cart))'
+           class="btn btn-link" style='color:@(if(cart.isEmpty)"red; cursor:not-allowed;" else "green")'>
+            <i class="fa fa-shopping-cart fa-lg"></i></a>
+    </div>
+</div>

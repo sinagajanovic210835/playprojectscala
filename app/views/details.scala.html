@@ -1,0 +1,23 @@
+@(cart:String, p:Product, categ:Set[String])(implicit messages:Messages)
+
+@main(p.name, cart, categ){
+
+<div class="container" style="color:green;">
+
+    <div style="display: flex; justify-content:space-around;">
+        <div style="width:50vw">
+            <img src ="@p.pictureURL" style="width:40vw">
+            <h4 style="text-align:center">@p.price RSD</h4><hr>
+            <p style="text-align:center">
+                <a href = "@routes.Products.addCart(p.id, cart)" style="font-size:1vw" class="btn btn-outline-danger">
+                    <i class="fa fa-cart-arrow-down"></i>Add to cart</a><br><br>
+            </p>
+        </div>
+        <div>
+            <p style="text-align:justify"><br>@p.description</p><hr>
+
+        </div>
+    </div>
+</div>
+
+}

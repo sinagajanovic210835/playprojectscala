@@ -1,0 +1,39 @@
+@(x:List[Product], cart:String, categories:Set[String])(implicit messages:Messages)
+@main("Update/Insert/Delete Products", cart, categories) {
+
+
+<div class="col" style="background-color:#4d4d4d;">
+    <a href="@routes.Products.showProdForm(0)" class="btn btn-link " style="color:yellow"><i class="fa fa-plus-square" aria-hidden="true"></i> <b>Insert new product</b></a>
+    <table class="table table-bordered table-striped table-sm table-hover table-dark">
+
+        <thead class="thead-dark">
+        <tr style="text-align:center">
+            <td><h4>Product name</h4></td>
+            <td><h4>Picture</h4></td>
+            <td><h4>BAR code</h4></td>
+            <td><h4>Price</h4></td>
+            <td><h4>On stack</h4></td>
+            <td><h4>Category</h4></td>
+            <td><h4>ACTION</h4></td>
+        </tr>
+        </thead>
+        <tbody>
+        @for(p <- x){
+        <tr>
+            <td>@p.name</td>
+            <td><img src ="@p.pictureURL" style="width:3vw"></td>
+            <td><img src = "@routes.Barcodes.barcode(p.ean, 80)" alt="@p.ean"></td>
+            <td>@p.price</td>
+            <td>@p.stack</td>
+            <td>@p.category</td>
+            <td style="text-align:center"><h3><a href="@routes.Products.showProdForm(p.id)" class="btn btn-outline-success"> <i class="fa fa-wrench" aria-hidden="true"></i> Update</a>
+                &emsp;<a href="@routes.Products.delete(p.id)" class="btn btn-outline-danger" onclick="if (!(confirm('Are you sure you want to delete @p.name?'))) return false;">
+                    <i class="fa fa-trash-alt" aria-hidden="true"></i> Delete</a></h3>
+            </td>
+        </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+}

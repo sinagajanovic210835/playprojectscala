@@ -1,0 +1,15 @@
+GET     /                                             controllers.HomeController.index
+GET     /list/:categ                                  controllers.Products.listProds(categ:String, cart:String)
+GET     /barcode/$ean<\d{13}>                         controllers.Barcodes.barcode(ean:Long, in:Int)
+GET     /details                                      controllers.Products.details(cart:String, id:Int)
+GET     /addcart                                      controllers.Products.addCart(id:Int, k:String)
+GET     /removecart                                   controllers.Products.removeCart(id:Int, k:String)
+GET     /showcart                                     controllers.Products.showCart(k:String)
+GET     /pjson                                        controllers.Products.jsprod
+GET     /pjson/:id                                    controllers.Products.jsprodsingle(id:Int)
+GET     /update/:id                                   controllers.Products.showProdForm(id:Int)
+POST    /update/:id                                   controllers.Products.saveProduct(id:Int)
+GET     /delete/:id                                   controllers.Products.delete(id:Int)
+GET     /productpage                                  controllers.Products.updateProducts
+
+GET     /assets/*file                                 controllers.Assets.versioned(path="/public", file: Asset)

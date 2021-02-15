@@ -1,0 +1,4 @@
+[error] /home/sina/scalaworkspace/Webstore/webstore/project/Build.scala:27:19: object Project is not a member of package play
+[error]   val main = play.Project(appName, appVersion, appDependencies).settings(
+[error]                   ^
+[error] one error found

@@ -1,0 +1,55 @@
+@(form: Form[ProductForm.ProdData], postUrl: Call)(implicit request: MessagesRequestHeader)
+
+@main("Create/update product", "", Set()){
+
+<div style="text-align:center; color:green; background-color:#1a1a1a; min-width:70%"><br>
+
+        <a href = "@routes.Products.updateProducts" class="btn btn-link"><b><i class="fa fa-arrow-circle-left"></i> Back</b></a><br>
+ 
+
+        @if(form.hasGlobalErrors) {
+        @form.globalErrors.map { error: FormError =>
+        <div style="color:red">
+                @error.key: @error.message
+        </div>
+            }
+            }
+        <div class="form" >
+            @helper.form(postUrl) {
+
+            @helper.CSRF.formField
+
+            <div class="row">
+                <div class="col"  style="text-align:center">
+                @helper.inputText(form("name"))
+                </div>
+                <div class="col"  style="text-align:center">
+                @helper.inputText(form("price"))
+                </div>
+                <div class="col"  style="text-align:center">
+                    @helper.inputText(form("stack"))
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"  style="text-align:center">
+                    @helper.inputText(form("pictureURL"))
+                </div>
+                <div class="col"  style="text-align:center">
+                    @helper.select(form("category"), ("" -> "Choose category") :: (models.Product.categories.map(x => x -> x.capitalize).toList))
+                </div>
+                <div class="col"  style="text-align:center">
+                    @helper.inputText(form("ean"))
+                </div>
+            </div>
+
+
+
+            @helper.textarea(form("description"))
+
+
+                <input type="submit" class="btn btn-success" value="Save product">
+
+            }
+        </div>
+</div>
+}

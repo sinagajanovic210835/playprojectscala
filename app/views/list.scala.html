@@ -1,0 +1,20 @@
+@(l:List[Product], cart:String, categories:Set[String])(implicit messages:Messages)
+
+@main("Products", cart, categories){
+
+
+<div class="col" style="display: flex; justify-content:space-around; flex-wrap:wrap;min-width:70%">
+    @for(p <- l){
+    <div id="pr@p.id" style="text-align:center; margin-top:20px;margin-bottom:20px">
+        <h6 style ="color:blue;">@p.name.capitalize</h6>
+
+        <img src ="@p.pictureURL" style="height:15vw">
+
+        <h2 style ="color:green;">@p.price rsd</h2>
+        <h1><a href="@routes.Products.details(cart, p.id)" class="btn btn-outline-success"><i class="fa fa-eye"></i> Details</a><br>
+            <a href = '@routes.Products.addCart(p.id, cart)' style="font-size:1vw" class="btn btn-outline-danger"><i class="fa fa-cart-arrow-down"></i> Add to cart</a></h1>
+    </div>
+    }
+</div>
+
+}

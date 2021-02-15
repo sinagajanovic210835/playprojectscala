@@ -1,0 +1,35 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/sina/scalaworkspace/Webstore/webstore/target/scala-2.13/wstore_2.13-1.0-SNAPSHOT-web-assets.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/52482.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/52482.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/javascripts/main.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/javascripts/main.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/javascripts[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/javascripts[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/javascripts/scripts.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/javascripts/scripts.js[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/45043.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/45043.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/47453.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/47453.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/27904.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/27904.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/favicon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/favicon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/stylesheets[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/stylesheets[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/115477.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/115477.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/stylesheets/main.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/stylesheets/main.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/29531.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/29531.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/48053.gif[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/48053.gif[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/49809.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/49809.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	public/images/45046.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/sina/scalaworkspace/Webstore/webstore/public/images/45046.jpeg[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
